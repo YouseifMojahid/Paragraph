@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paragraph</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Cairo", sans-serif;
+      }
+      .form {
+        max-width: 300px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .form textarea {
+        resize: none;
+        border: 1px solid black;
+        display: block;
+        height: 250px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .form textarea:focus {
+        outline: none;
+      }
+      .form input[type="submit"] {
+        width: fit-content;
+        padding: 5px 10px;
+        border: none;
+        background-color: #2196f3;
+        color: white;
+        margin-left: calc(100% - 70.6px);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <textarea placeholder="أكتب البراجراف الخاص بك"></textarea>
+      <input type="submit" value="عدد الكلمات" />
+      <p class="all-result">عدد الكلمات الكلى = <span></span></p>
+      <p class="end-result">عدد الكلمات النهائى (بدون تكرار) = <span></span></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
